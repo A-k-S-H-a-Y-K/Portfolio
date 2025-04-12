@@ -59,7 +59,11 @@ export const SecretQuestion = ({ correctAnswer }: SecretQuestionProps) => {
           }}
         >
           <img 
+<<<<<<< HEAD
             src="/assets/success.jpg" 
+=======
+            src="/src/assets/success.jpg" 
+>>>>>>> f7b0c24a43a6b9c9f531a2bd5237d01c0b1c7d1a
             alt="Success" 
             className="object-contain rounded-lg shadow-lg max-h-screen max-w-screen-lg"
           />
