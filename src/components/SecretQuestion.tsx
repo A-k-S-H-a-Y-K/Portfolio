@@ -49,7 +49,7 @@ export const SecretQuestion = ({ correctAnswer }: SecretQuestionProps) => {
       {/* Success Message */}
       {showSuccess && (
         <motion.div 
-          className="fixed inset-0 flex items-center justify-center z-50"
+          className="fixed inset-0 flex items-center justify-center z-50 p-4 sm:p-6 md:p-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 1, 0] }}
           transition={{ 
@@ -58,11 +58,13 @@ export const SecretQuestion = ({ correctAnswer }: SecretQuestionProps) => {
             ease: "easeInOut"
           }}
         >
-          <img 
-            src="/assets/success.jpg" 
-            alt="Success" 
-            className="object-contain rounded-lg shadow-lg max-h-screen max-w-screen-lg"
-          />
+          <div className="relative w-full h-full flex items-center justify-center">
+            <img 
+              src="/assets/success.jpg" 
+              alt="Success" 
+              className="object-contain rounded-lg shadow-lg w-full h-full max-w-[90vw] max-h-[90vh] sm:max-w-[80vw] sm:max-h-[80vh] md:max-w-[70vw] md:max-h-[70vh]"
+            />
+          </div>
         </motion.div>
       )}
 
