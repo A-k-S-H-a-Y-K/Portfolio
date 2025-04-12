@@ -46,7 +46,7 @@ export default function App() {
         >
           <div className="flex items-center gap-6">
             <img 
-              src="/src/assets/profile.jpg" 
+              src="/assets/profile.jpg" 
               alt="Akshay K" 
               className="w-[1000px] h-[1000px] rounded-none object-contain"
             />
